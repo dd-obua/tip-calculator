@@ -1,5 +1,10 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import App from './components/App';
 
 const root = createRoot(document.getElementById('root'));
-root.render(<StrictMode>Hello World!</StrictMode>);
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
