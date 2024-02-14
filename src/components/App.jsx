@@ -1,5 +1,7 @@
-import Bill from './Bill';
+import Bill from './BillInput';
 import Rating from './Rating';
+import Output from './Output';
+import Reset from './Reset';
 
 const App = () => {
   return (
@@ -7,10 +9,8 @@ const App = () => {
       <Bill />
       <Rating>How did you like the service?</Rating>
       <Rating>How did your friend like the service?</Rating>
-      <p>
-        <strong>You pay $100 ($100 + $0 tip)</strong>
-      </p>
-      <button>Reset</button>
+      <Output />
+      <Reset />
     </div>
   );
 };
