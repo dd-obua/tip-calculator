@@ -1,8 +1,10 @@
-const Rating = ({ children }) => {
+const Rating = ({ children, rating, onSelect }) => {
+  const handleChange = (e) => onSelect(Number(e.target.value));
+
   return (
     <p>
       <label>{children}</label>
-      <select>
+      <select value={rating} onChange={handleChange}>
         <option value="0">Dissatisfied 0%</option>
         <option value="5">It was okay 5%</option>
         <option value="10">It was good 10%</option>
