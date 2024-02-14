@@ -1,8 +1,8 @@
-const Output = () => {
+const Output = ({ bill }) => {
   return (
     <p>
       <strong>
-        You pay ${100} (${100} + ${0} tip)
+        You pay ${} (${bill} + ${0} tip)
       </strong>
     </p>
   );

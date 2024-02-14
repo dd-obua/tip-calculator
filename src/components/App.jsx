@@ -12,7 +12,7 @@ const App = () => {
       <BillInput bill={bill} onSetBill={setBill} />
       <Rating>How did you like the service?</Rating>
       <Rating>How did your friend like the service?</Rating>
-      <Output />
+      <Output bill={bill} />
       <Reset />
     </div>
   );
