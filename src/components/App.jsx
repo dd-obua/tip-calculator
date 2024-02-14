@@ -8,6 +8,7 @@ const App = () => {
   const [bill, setBill] = useState('');
   const [rating1, setRating1] = useState(0);
   const [rating2, setRating2] = useState(0);
+  const tip = bill * ((rating1 + rating2) / 2 / 100);
 
   return (
     <div>
@@ -21,7 +22,7 @@ const App = () => {
         How did your friend like the service?
       </Rating>
 
-      <Output bill={bill} />
+      <Output bill={bill} tip={tip} />
       <Reset />
     </div>
   );
